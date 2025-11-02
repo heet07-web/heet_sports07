@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game on.in - Buy Now</title>
+  <style>
+    body {
+      background: #0d0d0d;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: gold;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    hr {
+      border: 1px solid gold;
+      width: 80%;
+      margin: 20px auto;
+    }
+
+    header {
+      background: white;
+      padding: 12px;
+      border-radius: 20px;
+      margin: 10px;
+      text-align: center;
+    }
+
+    header a {
+      background: #007b3a;
+      color: white;
+      margin: 10px;
+      padding: 10px 25px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    header a:hover {
+      background: gold;
+      color: black;
+    }
+
+    .buy-box {
+      background: #1a1a1a;
+      border: 2px solid gold;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 30px;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      margin: 10px 0 5px 25px;
+      color: gold;
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 85%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      border: 1px solid gold;
+      background: #262626;
+      color: white;
+      font-size: 16px;
+      outline: none;
+    }
+
+    input[type="submit"] {
+      background: gold;
+      color: black;
+      font-weight: bold;
+      border: none;
+      border-radius: 50px;
+      padding: 10px;
+      width: 60%;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+
+    input[type="submit"]:hover {
+      background: #007b3a;
+      color: white;
+    }
+
+    .info-box {
+      text-align: center;
+      color: #ccc;
+      max-width: 800px;
+      margin: 20px auto;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    footer {
+      background: linear-gradient(90deg, #1a1a1a, #3b3b3b);
+      color: white;
+      padding: 10px;
+      border-radius: 20px;
+      margin: 10px;
+      text-align: center;
+    }
+
+    .q {
+      width: 25px;
+      height: 25px;
+      margin: 8px;
+      vertical-align: middle;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .q:hover {
+      transform: scale(1.3);
+      filter: brightness(1.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1><b>Buy Now - Game on.in</b></h1>
+  <hr>
+
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+	    <a href="product.html">Products</a>
+	   <a href="contactus1.html">contact us</a>
+      <a href="aboutus.html">About Us</a>
+    </nav>
+  </header>
+
+  <div class="info-box">
+    <p>
+      Welcome to our <strong>Buy Now</strong> page! Whether you're a beginner or a professional, Game on.in provides high-quality cricket gear that fits your passion and performance.
+      Choose your favorite products, fill in the details below, and we’ll deliver your order quickly and safely to your doorstep.
+    </p>
+    <p>
+      We ensure 100% genuine cricket equipment with easy returns and fast delivery options across India.
+      Let’s get you ready for your next big match!
+    </p>
+  </div>
+
+  <div class="buy-box">
+    <h2 style="color: gold;">Place Your Order</h2>
+    <p style="color:#ccc;">Fill in your details to confirm your order.</p>
+
+    <form onsubmit="alert('Order Placed Successfully! Thank You for Shopping at Game on.in'); return false;">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" placeholder="Enter your full name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" placeholder="Enter delivery address" required>
+
+      <label for="product">Select Product:</label>
+      <select id="product" required>
+        <option value="">--Select Product--</option>
+        <option value="Bat">Bat</option>
+        <option value="Ball">Ball</option>
+        <option value="Gloves">Gloves</option>
+        <option value="Helmet">Helmet</option>
+        <option value="Pads">Pads</option>
+        <option value="Cricket Kit">Cricket Kit</option>
+      </select>
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" min="1" placeholder="Enter quantity" required>
+
+      <input type="submit" value="Buy Now">
+    </form>
+  </div>
+
+  <div class="info-box">
+    <p>
+      After placing your order, you’ll receive a confirmation email with your order ID and estimated delivery date.  
+      For any issues, contact our support team — we’re always ready to help!
+    </p>
+    <p>
+      Thank you for trusting <strong>Game on.in</strong>. We’re proud to be your cricket partner, delivering performance, trust, and quality in every product.
+    </p>
+  </div>
+
+  <footer>
+    <div>
+      <a href="https://www.instagram.com" target="_blank">
+        <img src="insta.png" alt="Instagram" class="q">
+      </a>
+      <a href="https://www.facebook.com" target="_blank">
+        <img src="facebook.png" alt="Facebook" class="q">
+      </a>
+      <a href="https://www.youtube.com" target="_blank">
+        <img src="youtube.png" alt="YouTube" class="q">
+      </a>
+    </div>
+    <center><p>&copy; 2025 Game on.in | All Rights Reserved</p></center>
+  </footer>
+
+</body>
+</html>
